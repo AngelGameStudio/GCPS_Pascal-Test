@@ -29,10 +29,12 @@ type
     procedure Add(Sender: TObject);
     procedure Jian(Sender: TObject);
     procedure Chen(Sender: TObject);
+    procedure Chu(Sender: TObject);
   private
 
   public
     a,b:integer;
+    c,d:real;
     s:string;
   end;
 
@@ -64,6 +66,13 @@ begin
   Val(Edit1.Text,a);
   Val(Edit2.Text,b);
   Str(a*b,s);
+  Edit3.Text:=s;
+end;
+procedure TForm1.Chu(Sender: TObject);
+begin
+  Val(Edit1.Text,c);
+  Val(Edit2.Text,d);
+  Str(c/d,s);
   Edit3.Text:=s;
 end;
 
