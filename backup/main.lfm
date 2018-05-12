@@ -1,0 +1,159 @@
+object Form1: TForm1
+  Left = 267
+  Height = 250
+  Top = 105
+  Width = 250
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = '计算器'
+  ClientHeight = 250
+  ClientWidth = 250
+  LCLVersion = '1.8.2.0'
+  object Edit1: TEdit
+    Left = 7
+    Height = 25
+    Top = 6
+    Width = 50
+    NumbersOnly = True
+    TabOrder = 0
+    Text = '数值1'
+  end
+  object Edit2: TEdit
+    Left = 64
+    Height = 25
+    Top = 6
+    Width = 50
+    NumbersOnly = True
+    TabOrder = 1
+    Text = '数值2'
+  end
+  object Edit3: TEdit
+    Cursor = crArrow
+    Left = 7
+    Height = 25
+    Top = 56
+    Width = 108
+    NumbersOnly = True
+    ReadOnly = True
+    TabStop = False
+    TabOrder = 2
+  end
+  object Label1: TLabel
+    Left = 40
+    Height = 17
+    Top = 38
+    Width = 24
+    Caption = '结果'
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 16
+    Height = 24
+    Top = 99
+    Width = 106
+    Caption = '+'
+    OnClick = Add
+    TabOrder = 3
+  end
+  object Button2: TButton
+    Left = 128
+    Height = 24
+    Top = 99
+    Width = 106
+    Caption = '-'
+    OnClick = Jian
+    TabOrder = 4
+  end
+  object Button3: TButton
+    Left = 16
+    Height = 24
+    Top = 136
+    Width = 106
+    Caption = '*'
+    OnClick = Chen
+    TabOrder = 5
+  end
+  object Button4: TButton
+    Left = 128
+    Height = 24
+    Top = 136
+    Width = 106
+    Caption = '/'
+    TabOrder = 6
+  end
+  object Label2: TLabel
+    Left = 128
+    Height = 17
+    Top = 7
+    Width = 116
+    Caption = 'BY:HAO233|HUDICK'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 128
+    Height = 17
+    Top = 40
+    Width = 116
+    Caption = '©2018    本程序开源'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 128
+    Height = 12
+    Top = 80
+    Width = 120
+    Caption = '禁止计算机班新生盗用'
+    Font.CharSet = GB2312_CHARSET
+    Font.Color = clRed
+    Font.Height = -12
+    Font.Name = '宋体'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 14
+    Height = 25
+    Top = 169
+    Width = 52
+    Caption = '2018'
+    Font.CharSet = GB2312_CHARSET
+    Font.Color = clRed
+    Font.Height = -24
+    Font.Name = '华文新魏'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 42
+    Height = 25
+    Top = 197
+    Width = 176
+    Caption = 'Hpply New Year'
+    Font.CharSet = GB2312_CHARSET
+    Font.Color = clNavy
+    Font.Height = -24
+    Font.Name = '华文新魏'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 32
+    Height = 12
+    Top = 232
+    Width = 186
+    Caption = '主页:http://angelgamestudio.org'
+    Font.CharSet = GB2312_CHARSET
+    Font.Color = clRed
+    Font.Height = -12
+    Font.Name = '宋体'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+end
