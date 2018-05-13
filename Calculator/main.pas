@@ -26,12 +26,13 @@ type
     Label5: TLabel;
     Label6: TLabel;
     Label7: TLabel;
+    hexif: TRadioButton;
     procedure Add(Sender: TObject);
     procedure Jian(Sender: TObject);
     procedure Chen(Sender: TObject);
     procedure Chu(Sender: TObject);
   private
-
+    e:integer;
   public
     a,b:integer;
     c,d:real;
@@ -70,9 +71,11 @@ begin
 end;
 procedure TForm1.Chu(Sender: TObject);
 begin
+  e:=2;
+  if hexif.Checked then e:=8;
   Val(Edit1.Text,c);
   Val(Edit2.Text,d);
-  Str(c/d,s);
+  Str(c/d:e:e,s);
   Edit3.Text:=s;
 end;
 

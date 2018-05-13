@@ -69,10 +69,13 @@ begin
   Edit3.Text:=s;
 end;
 procedure TForm1.Chu(Sender: TObject);
+var
+  e:integer;
 begin
+  e:=8;
   Val(Edit1.Text,c);
   Val(Edit2.Text,d);
-  Str(c/d,s);
+  Str(c/d:0:e,s);
   Edit3.Text:=s;
 end;
 

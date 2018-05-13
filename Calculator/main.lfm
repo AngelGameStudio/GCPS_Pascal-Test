@@ -1,5 +1,5 @@
 object Form1: TForm1
-  Left = 231
+  Left = 224
   Height = 250
   Top = 100
   Width = 250
@@ -157,5 +157,13 @@ object Form1: TForm1
     Font.Quality = fqDraft
     ParentColor = False
     ParentFont = False
+  end
+  object hexif: TRadioButton
+    Left = 176
+    Height = 21
+    Top = 175
+    Width = 65
+    Caption = '8位小数'
+    TabOrder = 7
   end
 end
