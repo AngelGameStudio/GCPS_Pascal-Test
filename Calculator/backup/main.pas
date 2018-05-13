@@ -5,7 +5,8 @@ unit main;
 interface
 
 uses
-  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls;
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
+  Tools;
 
 type
 
@@ -16,6 +17,7 @@ type
     Button2: TButton;
     Button3: TButton;
     Button4: TButton;
+    Button5: TButton;
     Edit1: TEdit;
     Edit2: TEdit;
     Edit3: TEdit;
@@ -23,15 +25,14 @@ type
     Label2: TLabel;
     Label3: TLabel;
     Label4: TLabel;
-    Label5: TLabel;
-    Label6: TLabel;
     Label7: TLabel;
     procedure Add(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
     procedure Jian(Sender: TObject);
     procedure Chen(Sender: TObject);
     procedure Chu(Sender: TObject);
   private
-
+    e:integer;
   public
     a,b:integer;
     c,d:real;
@@ -54,6 +55,12 @@ begin
   Str(a+b,s);
   Edit3.Text:=s;
 end;
+
+procedure TForm1.Button5Click(Sender: TObject);
+begin
+  Form2.Show;
+end;
+
 procedure TForm1.Jian(Sender: TObject);
 begin
   Val(Edit1.Text,a);
@@ -69,13 +76,16 @@ begin
   Edit3.Text:=s;
 end;
 procedure TForm1.Chu(Sender: TObject);
-var
-  e:integer;
 begin
-  e:=8;
+  e:=2;
+  if Form2.Hex.Checked then e:=8;
   Val(Edit1.Text,c);
   Val(Edit2.Text,d);
-  Str(c/d:0:e,s);
+  if d = 0 then begin
+  Showmessage('除数为0!');
+  exit;
+  end;
+  Str(c/d:e:e,s);
   Edit3.Text:=s;
 end;
 
