@@ -1,9 +1,7 @@
-# GCPS_Pascal-Test
+﻿# 算法与新的代码测试
 
-## 为什么会有这个项目?
+## 关于这个Branch
 
-在GCPS,有一个计算机兴趣班,使用的是Pascal,为了让学生更快的获取代码,因此有了这个项目.
+这个Branch是用于HAO测试新的理念而不会影响到原本的分支
 
-## 内容介绍
-
-它是一个计算器，微不足道，喜欢的可以Fork一下.
+## 如果你想看见HUDICK的算法的话[HUDICK](https://github.com/AngelGameStudio/GCPS_Pascal-Test/tree/HuIdea "请点击这里")
