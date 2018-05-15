@@ -43,6 +43,7 @@
         <Filename Value="tools.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="Form2"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Tools"/>
       </Unit2>

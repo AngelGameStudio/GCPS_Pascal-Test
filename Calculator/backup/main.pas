@@ -78,14 +78,19 @@ end;
 procedure TForm1.Chu(Sender: TObject);
 begin
   e:=2;
-  if Form2.Hex.Checked then e:=8;
+  if Form2.Hex.Checked then Val(Form2.Edit1.Text,e);
   Val(Edit1.Text,c);
   Val(Edit2.Text,d);
   if d = 0 then begin
   Showmessage('除数为0!');
   exit;
   end;
-  Str(c/d:e:e,s);
+  Str(c/d:0:e,s);
+  if Form2.Del.Checked then begin
+  while s[Length(s)] = '0' do begin
+    delete(s,length(s),1);
+  end;
+end;
   Edit3.Text:=s;
 end;
 
