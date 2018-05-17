@@ -1,7 +1,7 @@
 object Form2: TForm2
-  Left = 284
+  Left = 215
   Height = 200
-  Top = 171
+  Top = 208
   Width = 200
   BorderIcons = [biSystemMenu]
   Caption = '设置'
@@ -440,13 +440,14 @@ object Form2: TForm2
     Height = 25
     Top = 28
     Width = 91
+    NumbersOnly = True
     TabOrder = 1
     Text = '8'
   end
   object Image2: TImage
-    Left = 88
+    Left = 3
     Height = 75
-    Top = 120
+    Top = 38
     Width = 75
     Picture.Data = {
       0A544A706567496D616765CF090000FFD8FFE000104A46494600010100000100
@@ -548,5 +549,13 @@ object Form2: TForm2
     Width = 94
     Caption = '不限制小数位'
     TabOrder = 3
+  end
+  object Edit2: TEdit
+    Left = 104
+    Height = 25
+    Top = 104
+    Width = 90
+    TabOrder = 4
+    Text = '100'
   end
 end

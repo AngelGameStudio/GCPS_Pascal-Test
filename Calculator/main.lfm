@@ -1,19 +1,19 @@
 object Form1: TForm1
-  Left = 271
+  Left = 187
   Height = 248
-  Top = 100
+  Top = 122
   Width = 250
   BorderIcons = [biSystemMenu, biMinimize]
   Caption = '计算器-GitHub'
   ClientHeight = 248
   ClientWidth = 250
+  OnCreate = Start
   LCLVersion = '1.8.2.0'
   object Edit1: TEdit
     Left = 7
     Height = 25
     Top = 6
     Width = 50
-    NumbersOnly = True
     TabOrder = 0
     Text = '数值1'
   end
@@ -22,7 +22,6 @@ object Form1: TForm1
     Height = 25
     Top = 6
     Width = 50
-    NumbersOnly = True
     TabOrder = 1
     Text = '数值2'
   end

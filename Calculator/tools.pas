@@ -6,13 +6,14 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  ExtCtrls;
+  ExtCtrls, EditBtn;
 
 type
 
   { TForm2 }
 
   TForm2 = class(TForm)
+    Edit2: TEdit;
     NHex: TCheckBox;
     Edit1: TEdit;
     Hex: TCheckBox;
@@ -32,6 +33,8 @@ var
 implementation
 
 {$R *.lfm}
+
+{ TForm2 }
 
 end.
 
