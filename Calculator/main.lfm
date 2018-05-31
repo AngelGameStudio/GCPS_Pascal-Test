@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 187
+  Left = 245
   Height = 248
-  Top = 122
+  Top = 104
   Width = 250
   BorderIcons = [biSystemMenu, biMinimize]
   Caption = '计算器-GitHub'
@@ -9,131 +9,109 @@ object Form1: TForm1
   ClientWidth = 250
   OnCreate = Start
   LCLVersion = '1.8.2.0'
-  object Edit1: TEdit
-    Left = 7
-    Height = 25
-    Top = 6
-    Width = 50
+  object Jia: TButton
+    Left = 216
+    Height = 24
+    Top = 99
+    Width = 24
+    Caption = '+'
+    OnClick = SClick
     TabOrder = 0
-    Text = '数值1'
   end
-  object Edit2: TEdit
-    Left = 64
-    Height = 25
-    Top = 6
-    Width = 50
+  object NotJia: TButton
+    Left = 216
+    Height = 24
+    Top = 128
+    Width = 24
+    Caption = '-'
+    OnClick = SClick
     TabOrder = 1
-    Text = '数值2'
   end
-  object Edit3: TEdit
-    Cursor = crArrow
-    Left = 7
-    Height = 25
-    Top = 56
-    Width = 108
-    NumbersOnly = True
-    ReadOnly = True
-    TabStop = False
+  object Cheng: TButton
+    Left = 216
+    Height = 24
+    Top = 160
+    Width = 24
+    Caption = '*'
+    OnClick = SClick
     TabOrder = 2
   end
-  object Label1: TLabel
-    Left = 40
-    Height = 17
-    Top = 38
-    Width = 24
-    Caption = '结果'
-    ParentColor = False
-  end
-  object Button1: TButton
-    Left = 16
+  object NotCheng: TButton
+    Left = 216
     Height = 24
-    Top = 99
-    Width = 106
-    Caption = '+'
-    OnClick = Add
+    Top = 192
+    Width = 24
+    Caption = '/'
+    OnClick = SClick
     TabOrder = 3
   end
-  object Button2: TButton
-    Left = 128
+  object Debug: TButton
+    Left = 56
     Height = 24
-    Top = 99
-    Width = 106
-    Caption = '-'
-    OnClick = Jian
+    Top = 50
+    Width = 47
+    Caption = 'Debug'
+    OnClick = BDebug
     TabOrder = 4
   end
-  object Button3: TButton
-    Left = 16
-    Height = 24
-    Top = 136
-    Width = 106
-    Caption = '*'
-    OnClick = Chen
+  object NumEdit: TEdit
+    Left = 7
+    Height = 30
+    Top = 10
+    Width = 233
+    AutoSize = False
     TabOrder = 5
+    Text = 'NumEdit'
   end
-  object Button4: TButton
-    Left = 128
-    Height = 24
-    Top = 136
-    Width = 106
-    Caption = '/'
-    OnClick = Chu
+  object CE: TButton
+    Left = 0
+    Height = 32
+    Top = 50
+    Width = 56
+    Caption = 'CE'
+    OnClick = Zero
     TabOrder = 6
   end
-  object Label2: TLabel
-    Left = 128
-    Height = 17
-    Top = 7
-    Width = 116
-    Caption = 'BY:HAO233|HUDICK'
-    ParentColor = False
-  end
-  object Label3: TLabel
-    Left = 128
-    Height = 17
-    Top = 40
-    Width = 116
-    Caption = '©2018    本程序开源'
-    ParentColor = False
-    WordWrap = True
-  end
-  object Label4: TLabel
-    Left = 120
-    Height = 12
-    Top = 80
-    Width = 126
-    Caption = '开源~~~///(^v^)\\\~~~'
-    Font.CharSet = GB2312_CHARSET
-    Font.Color = clRed
-    Font.Height = -12
-    Font.Name = '宋体'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    ParentColor = False
-    ParentFont = False
-  end
-  object Label7: TLabel
-    Left = 6
-    Height = 12
-    Top = 232
-    Width = 228
-    Caption = '工程:/AngelGameStudio/GCPS_Pascal-Test'
-    Font.CharSet = GB2312_CHARSET
-    Font.Color = clRed
-    Font.Height = -12
-    Font.Name = '宋体'
-    Font.Pitch = fpVariable
-    Font.Quality = fqDraft
-    ParentColor = False
-    ParentFont = False
-  end
-  object Button5: TButton
-    Left = 16
-    Height = 24
-    Top = 168
-    Width = 103
-    Caption = 'Tools'
-    OnClick = Button5Click
+  object Bacak: TButton
+    Left = 104
+    Height = 32
+    Top = 50
+    Width = 136
+    Caption = 'Back'
+    OnClick = Back
     TabOrder = 7
+  end
+  object DengYu: TButton
+    Left = 176
+    Height = 24
+    Top = 220
+    Width = 64
+    Caption = '='
+    Default = True
+    OnClick = Deng
+    TabOrder = 8
+  end
+  object Debug1: TEdit
+    Left = 16
+    Height = 30
+    Top = 136
+    Width = 104
+    AutoSize = False
+    TabOrder = 9
+    Text = 'Debug1'
+  end
+  object Debug2: TEdit
+    Left = 16
+    Height = 30
+    Top = 168
+    Width = 104
+    AutoSize = False
+    TabOrder = 10
+    Text = 'Debug2'
+  end
+  object Timer1: TTimer
+    Interval = 1
+    OnTimer = Time
+    top = 80
   end
 end
